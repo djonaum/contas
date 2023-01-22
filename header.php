@@ -17,22 +17,18 @@
 <link type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet"/>    
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style_menu.css">    
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 <!--===============================================================================================-->
 </head>
   <div class="mmenu">
     <div class="marg-logo">
-      <!--<a href=""><img src="../img/logo.png" alt="logo-hotel-tertulios-home"  class="logo"></a>-->
+      <a href=""><img src="./img/logo.jpg" alt="logo"  class="logo"></a>
       <nav class="td">
         <a href="?pagina=home" class="page-scroll l">Home</a>
         <a href="?pagina=usuario" class="page-scroll l">Usuário</a>
         <a href="logout.php" class="page-scroll l">Sair</a>
-        <!--<a href="#about" class="page-scroll l">SOBRE</a>        
-        <a href="#services" class="page-scroll l">SERVIÇOS</a>        
-        <a  href="#team" class="page-scroll l">TARIFÁRIO</a>
-        <a  href="#contact" class="page-scroll l">CONTATO</a>
-        <a href="blog/" class="page-scroll l">BLOG</a>-->
       </nav>      
     </div>               
   </div>      
@@ -44,15 +40,11 @@
       <div class="tres"></div> 
     </div>
     <div class="lg">
-      <!--<a href=""><img src="../img/logo.png" class="logo2"></a>-->
+      <a href=""><img src="./img/logo.jpg" class="logo2"></a>
     </div>
     <nav class="mn2">      
-      <a href="?pagina=home" onclick="verificar()"  class="page-scroll l">Home</a>
-      <!--<a href="#reservas" onclick="verificar()" class="page-scroll l">RESERVAS</a>
-      <a href="#about" onclick="verificar()" class="page-scroll l">SOBRE</a>      
-      <a href="#services" onclick="verificar()" class="page-scroll l">SERVIÇOS</a>      
-      <a  href="#team" onclick="verificar()" class="page-scroll l">TARIFÁRIO</a>
-      <a  href="#contact" onclick="verificar()" class="page-scroll l">CONTATO</a>
-      <a href="blog/" onclick="verificar()" class="page-scroll l">BLOG</a>-->
+    <a href="?pagina=home" class="page-scroll l">Home</a>
+        <a href="?pagina=usuario" class="page-scroll l">Usuário</a>
+        <a href="logout.php" class="page-scroll l">Sair</a>
     </nav>
   </div>
