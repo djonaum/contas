@@ -19,8 +19,9 @@ if (isset($_POST['filter'])){
    <input class="form-check-input" type="checkbox" checked id="conta" name="conta">
    <label class="form-check-label col-2" for="flexCheckDefault">Conta</label>
   </div>  
-  <div class="row col-3 md-2">
+  <div class="filtro">
     <label for="exampleFormControlInput1 " class="form-label">Data</label>
+    
     <select class="form-control" id="compet" name="compet">
       <option value ="0" disabled selected>Selecione um mês</option>
     <?php
@@ -36,10 +37,10 @@ if (isset($_POST['filter'])){
     ?>
     </select>
     <button  name="filter" id="filter" class="btn btn-primary col-1 glyphicon glyphicon-search mt-2"></button>  
-   
+    
   </div>  
-    <div id="formulario">    
-      <div class="row"> 
+    
+       
         <?php 
           if ($conta == 0){
             gastos($conexao, $usuario, $compet);             
@@ -47,7 +48,8 @@ if (isset($_POST['filter'])){
             gastos_agrupa($conexao, $usuario, $compet); 
           }
         ?>        
-      </div>                                      
-    </div>      
+      
+    
+
   </form>
 </div>  

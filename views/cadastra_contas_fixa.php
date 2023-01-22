@@ -15,43 +15,35 @@
     <h1>Contas Fixa</h1>    
 </div>
 <div class="container">    
-<form action="" method="POST">
-  
-    <div id="formulario">          
-      <div class="row">
+  <form action="" method="POST">  
+    <div id="formulario">                
         <label for="exampleFormControlInput1" class="form-label">Descrição da Conta Fixa</label>       
         <?php 
-          echo '<select class="form-control col-2"  name="id_conta" id="id_conta">';
+          echo '<select class="form-control"  name="id_conta" id="id_conta">';
           echo '<option Value="0" selected disabled>Selecione uma conta</option>';
           foreach(contas($conexao,'F') as $conta){
             echo '<option value="'.$conta['id_conta'].'">'.$conta['dsc_conta'].'</option>';            
           };
           echo '</select>';            
-        ?>
-      </div>
-      <div class="row ">
+        ?>     
+      
         <label for="exampleFormControlInput1" class="form-label">Valor</label>       
-        <input type="number" class="form-control col-2" id="vlr_fixo" name="vlr_fixo" placeholder="Valor" step="0.010"/>
+        <input type="number" class="form-control" id="vlr_fixo" name="vlr_fixo" placeholder="Valor" step="0.010"/>
 
         <label for="exampleFormControlInput1" class="form-label ">Vencimento</label>       
-        <input type="number" class="form-control col-2" id="vencto_fixo" name="vencto_fixo" placeholder="Vencimento"/>
+        <input type="number" class="form-control" id="vencto_fixo" name="vencto_fixo" placeholder="Vencimento"/>
 
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="ativo" name="ativo">
-          <label class="form-check-label col-2" for="flexCheckDefault">Ativo</label>
+          <label class="form-check-label" for="flexCheckDefault">Ativo</label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="geral" name="geral">
-          <label class="form-check-label col-2" for="flexCheckDefault">Conta Geral</label>
-        </div>        
-      </div>      
-    </div>        
-    <button type="submit" class="btn btn-primary glyphicon glyphicon-floppy-saved " id="save-btn" ></button>
-  
-  <hr>
-  <?php
-  contas_fixa($conexao, $_SESSION['usuario_id']);
-  ?>
-    
-</form>
+          <label class="form-check-label " for="flexCheckDefault">Conta Geral</label>
+        </div>                    
+    </div>  
+    <button type="submit" class="btn btn-primary glyphicon glyphicon-floppy-saved " id="save-btn" ></button>  
+    <hr>
+    <?php contas_fixa($conexao, $_SESSION['usuario_id']); ?>    
+  </form>
 </div>   

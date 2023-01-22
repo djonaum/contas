@@ -225,6 +225,7 @@ function gastos_agrupa($conexao, $usuario, $compet){
   }                                   
   
     $total = 0;
+    echo '<div id="formulario">';
     echo '<table  class="table table-striped">';
     echo '  <thead>';
     echo '    <tr>';
@@ -268,32 +269,22 @@ function gastos_agrupa($conexao, $usuario, $compet){
     echo '    <tr>';    
     echo '      <td></td>';
     echo '      <td></td>';
-    echo '    </tr>';  
-    echo '    <tr>';  
-    echo '      <td><h3>Total</h3></td>';
-    echo '      <td>';
-    echo '      </td>';        
-    echo '    </tr>';  
-    echo '    <tr style="border-top:1px solid;">';
-    echo '      <td style="background-color: red;">';
-    echo '        <h4>Total a Pagar</h4>';
-    echo '      </td>';    
-    echo '      <td style="background-color: red;">';
-    echo '         <h4>R$ '.number_format($total - $total_pago , 2, ',', '').'</h4>';  
-    echo '      </td>';    
-    echo '      <td style="background-color: red; color: White;">';  
-    echo '      </td>';    
-    echo '      <td style="background-color: Blue; color: White;">';
-    echo '        <h4>Total Pago</h4>';  
-    echo '      </td>';        
-    echo '      <td style="background-color: Blue; color: White;">';
-    echo '         <h4>R$ '.number_format($total_pago, 2, ',', '').'</h4>';    
-    echo '      </td>';
-    echo '      <td style="background-color: Blue; color: White;">';  
-    echo '      </td>';  
-    echo '    </tr>';
+    echo '      <td></td>';    
+    echo '      <td></td>';
+    echo '    </tr>';      
     echo '  </tbody>';
-    echo '</table>';                                 
+    echo '</table>';   
+    echo '</div>';                              
+    echo '<div class="total">';
+    echo '  <div class="total-pagar">';
+    echo '    <h3>Total a Pagar</h3>';
+    echo '    <h4>R$ '.number_format($total - $total_pago , 2, ',', '').'</h4>';
+    echo '  </div>';
+    echo '  <div class="total-pago">';
+    echo '    <h3>Total a Pagar</h3>';    
+    echo '    <h4>R$ '.number_format($total_pago , 2, ',', '').'</h4>';    
+    echo '  </div>';
+    echo'</div>';
 }
 
 
@@ -395,6 +386,7 @@ foreach($pagto as $pago){
   $total_pago = $pago['tot_pago'];
 }                                   
   $total = 0;
+  echo '<div id="formulario">';
   echo '<table  class="table table-striped">';
   echo '  <thead>';
   echo '    <tr>';
@@ -463,39 +455,20 @@ foreach($pagto as $pago){
   echo '      <td>';
   echo '      </td>';                  
   echo '    </tr>';  
-  echo '    <tr>';  
-  echo '      <td><h3>Total</h3></td>';
-  echo '      <td>';
-  echo '      </td>';        
-  echo '      <td>';
-  echo '      </td>';        
-  echo '      <td>';
-  echo '      </td>';   
-  echo '      <td>';
-  echo '      </td>';                
-  echo '      <td>';
-  echo '      </td>';                  
-  echo '    </tr>';  
-  echo '    <tr style="border-top:1px solid;">';
-  echo '      <td style="background-color: red;">';
-  echo '        <h4>Total a Pagar</h4>';
-  echo '      </td>';    
-  echo '      <td style="background-color: red;">';
-  echo '         <h4>R$ '.number_format($total - $total_pago , 2, ',', '').'</h4>';  
-  echo '      </td>';    
-  echo '      <td style="background-color: red; color: White;">';  
-  echo '      </td>';    
-  echo '      <td style="background-color: Blue; color: White;">';
-  echo '        <h4>Total Pago</h4>';  
-  echo '      </td>';        
-  echo '      <td style="background-color: Blue; color: White;">';
-  echo '         <h4>R$ '.number_format($total_pago, 2, ',', '').'</h4>';    
-  echo '      </td>';
-  echo '      <td style="background-color: Blue; color: White;">';  
-  echo '      </td>';  
-  echo '    </tr>';
+  echo '</table>';  
+  echo '</div>';                              
+  echo '<div class="total">';
+  echo '  <div class="total-pagar">';
+  echo '    <h3>Total a Pagar</h3>';
+  echo '    <h4>R$ '.number_format($total - $total_pago , 2, ',', '').'</h4>';
+  echo '  </div>';
+  echo '  <div class="total-pago">';
+  echo '    <h3>Total a Pagar</h3>';    
+  echo '    <h4>R$ '.number_format($total_pago , 2, ',', '').'</h4>';    
+  echo '  </div>';
+  echo'</div>';  
   echo '  </tbody>';
-  echo '</table>';
+  
 }
 
 function insere_conta($conexao, $dsc_conta, $tipo, $vcto){

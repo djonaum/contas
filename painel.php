@@ -33,9 +33,7 @@ if (!isset($_SESSION['usuario_id'])){
     case'delete_conta_fixa': include'constructor/delete_fixo.php';break;     
     case'delete_conta_variavel': include'constructor/delete_variaveis.php';break;     
     case'pagamento': include'constructor/pagamento.php';break;     
-
-
-  
+      
     default: include 'views/home.php'; break;
   }
   echo '</body>';

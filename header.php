@@ -24,7 +24,7 @@
 </head>
   <div class="mmenu">
     <div class="marg-logo">
-      <a href=""><img src="./img/logo.jpg" alt="logo"  class="logo"></a>
+      <a href="?pagina=home" ><img src="./img/logo.jpg" alt="logo"  class="logo"></a>
       <nav class="td">
         <a href="?pagina=home" class="page-scroll l">Home</a>
         <a href="?pagina=usuario" class="page-scroll l">Usuário</a>
@@ -40,7 +40,7 @@
       <div class="tres"></div> 
     </div>
     <div class="lg">
-      <a href=""><img src="./img/logo.jpg" class="logo2"></a>
+      <a href="?pagina=home"><img src="./img/logo.jpg" class="logo2"></a>
     </div>
     <nav class="mn2">      
     <a href="?pagina=home" class="page-scroll l">Home</a>

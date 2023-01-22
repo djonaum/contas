@@ -12,17 +12,19 @@
 <div class="container">   
   <form action="" method="POST">   
     <div id="formulario">    
-      <div class="row">       
-        <label for="exampleFormControlInput1" class="form-label">Contas</label>       
+      <div class="filtro">       
+        <label for="exampleFormControlInput1" class="form-label">Contas</label>             
         <input type="text" class="form-control mb-2" id="contas" name="contas" placeholder="Descrição"/>
+
         <label for="exampleFormControlInput1" class="form-label">Tipo</label>       
         <select class="form-control mb-2" id="tipo" name="tipo">
           <option value="" disabled selected>Selecione um tipo de conta</option>
           <option value="V">Conta Variável</option>
           <option value="F">Conta Fixa</option>
-        </select>
+        </select>    
+
         <label for="exampleFormControlInput1" class="form-label ">Vencimento</label>       
-        <select class="form-control col-2" name="vcto" id="vcto">
+        <select class="form-control mb-2"  name="vcto" id="vcto">
           <option value='0' disabled selected>Selecione um Vencimento</option>
           <option value='5'>Dia 5</option>
           <option value='20'>Dia 20</option>

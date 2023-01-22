@@ -24,6 +24,7 @@
   margin-bottom:5%;  
   padding-left: 5%;
   padding-right: 5%;
+  
 }
 
 .col-2{
@@ -41,8 +42,49 @@
     margin-bottom: 20px;
 }
 
+.filtro{    
+    display: flex;    
+    gap: 10px;
+    align-items: center;
+    justify-content: left;        
+}
+
+.total{
+    display: flex;    
+    gap: 10px;    
+    align-items: center;
+    justify-content: center;  
+    margin-bottom: 2%;     
+}
+
+.total-pagar{
+    height: 30%;
+    width: 30%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: red;
+    color: aliceblue;
+}
+
+.total-pago{    
+    height: 30%;
+    width: 30%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: blue;    
+}
+
+#compet{
+    width: 30%;
+}
 @media (max-width:570px){
     .painel{                     
+        flex-wrap: wrap;
+    }
+    .filtro{    
         flex-wrap: wrap;
     }
 }
